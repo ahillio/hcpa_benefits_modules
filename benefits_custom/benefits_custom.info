@@ -1,0 +1,4 @@
+name = "Benefits Custom"
+description = "customizations for benefits.seiuhcpa.org"
+core = 7.x
+package = "custom"

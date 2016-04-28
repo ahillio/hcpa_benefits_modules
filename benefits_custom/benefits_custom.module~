@@ -1,0 +1,12 @@
+<?php
+
+function benefits_custom_form_alter($form_id){
+  dsm($form_id);
+}
+
+function benefits_custom_form_tuition_assistance_entityform_edit_form_alter(&$form, $form_id){
+  $form['agreement'] = array(
+    '#markup' => t('<p>By submitting this application, I agree to abide by <a class="colorbox-inline" href="?width=410&amp;height=660&amp;inline=true#block-bean-tuition-assistance-rules-and-r">the rules and requirements</a> governing the SEIU HCPA Tuition Assistance Program as approved by the SEIU Healthcare PA Training and Education Fund Board of Trustees.</p>'),
+    '#weight' => 30,
+  );
+}
